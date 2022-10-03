@@ -55,5 +55,10 @@
         {
             return data.Values.Where(x => x.Continent==continent && x.Capital==capital);
         }
+
+        public bool ExistsCountry(int id)
+        {
+            return data.ContainsKey(id);
+        }
     }
 }

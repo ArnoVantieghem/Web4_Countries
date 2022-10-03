@@ -9,5 +9,6 @@
         void RemoveCountry(Country country);
 
         IEnumerable<Country> GetAll(string continent, string capital);
+        bool ExistsCountry(int id);
     }
 }
